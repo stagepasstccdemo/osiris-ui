@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/stagePass/osiris-ui/compare/v1.2.0...v1.2.1) (2023-04-08)
+
+
+### Bug Fixes
+
+* add [@types](https://github.com/types) definitions ([628cdd1](https://github.com/stagePass/osiris-ui/commit/628cdd1ff6f569576864b24c8a7a3a49e8ba5e90))
+
 # [1.2.0](https://github.com/stagePass/osiris-ui/compare/v1.1.0...v1.2.0) (2023-04-08)
 
 
