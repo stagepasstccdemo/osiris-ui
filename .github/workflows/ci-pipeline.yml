@@ -26,8 +26,28 @@ jobs:
           name: build-output
           path: dist/
 
-  deploy:
+  publish:
     needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-output
+      - name: Install dependencies
+        run: yarn install
+      - name: Generate build
+        run: yarn build
+      - name: Semantic Release Versioning
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
+    permissions:
+      contents: write
+
+  deploy:
+    needs: publish
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2

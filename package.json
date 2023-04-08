@@ -77,6 +77,8 @@
     "@chakra-ui/react": "1.8.8",
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@types/jest": "^27.0.1",
@@ -88,6 +90,7 @@
     "framer-motion": "^6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "semantic-release": "^21.0.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1",
     "ts-node": "^10.9.1"
@@ -97,5 +100,32 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
+  "release": {
+    "branches": [
+      "main",
+      "staging"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
   }
 }
