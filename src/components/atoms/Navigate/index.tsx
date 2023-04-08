@@ -1,5 +1,4 @@
 import { navigateToUrl } from "single-spa";
-import Teste from "@atoms/Teste";
 
 interface IPropsNavigate {
   path: string;
@@ -14,7 +13,6 @@ export const Navigate: React.FC<IPropsNavigate> = (props: IPropsNavigate) => {
 
   return (
     <>
-      <Teste />
       <h1 className="font-bold  text-gray-100 bg-purple-950 p-4 w-[128px] text-center cursor-pointer">
         Hello world!
       </h1>
