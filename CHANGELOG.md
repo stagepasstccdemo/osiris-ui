@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/stagePass/osiris-ui/compare/v1.0.0...v1.0.1) (2023-04-08)
+
+
+### Bug Fixes
+
+* eslint not resolving absolute path imports ([e63187b](https://github.com/stagePass/osiris-ui/commit/e63187bdfeb6899b3a362aa2160de930445d1f62))
+
 # 1.0.0 (2023-04-08)
 
 
