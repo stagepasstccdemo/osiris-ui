@@ -1,6 +1,7 @@
 {
   "name": "@stagepass/osiris-ui",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "webpack serve --port 8081",
     "start:standalone": "webpack serve --env standalone",
@@ -106,6 +107,7 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/github",
+    "@semantic-release/npm",
     "@semantic-release/git"
   ],
   "release": {
