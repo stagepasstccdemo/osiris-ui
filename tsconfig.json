@@ -3,7 +3,12 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "declarationDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "allowJs": true,
+    "emitDeclarationOnly": true,
     "skipLibCheck": true,
+    "outDir": "dist",
     "baseUrl": "./",
     "paths": {
       "@components/*": ["src/components/*"],
