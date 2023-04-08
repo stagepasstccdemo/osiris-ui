@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/stagePass/osiris-ui/compare/v1.0.1...v1.1.0) (2023-04-08)
+
+
+### Features
+
+* add new components to osiris-ui ([59d4e60](https://github.com/stagePass/osiris-ui/commit/59d4e6044f726388833a2aede6afa9b80ece51e5))
+
 ## [1.0.1](https://github.com/stagePass/osiris-ui/compare/v1.0.0...v1.0.1) (2023-04-08)
 
 
