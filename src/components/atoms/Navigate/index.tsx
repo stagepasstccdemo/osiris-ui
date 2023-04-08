@@ -13,7 +13,7 @@ export const Navigate: React.FC<IPropsNavigate> = (props: IPropsNavigate) => {
 
   return (
     <>
-      <h1 className="font-bold  text-gray-100 bg-purple-950 p-4 w-[128px] text-center cursor-pointer">
+      <h1 className="font-bold  text-gray-100 bg-os-ternary-100 p-4 w-[128px] text-center cursor-pointer">
         Hello world!
       </h1>
       <button
