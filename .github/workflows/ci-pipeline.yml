@@ -44,6 +44,7 @@ jobs:
       - name: Semantic Release Versioning
         env: 
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
     permissions:
       contents: write
