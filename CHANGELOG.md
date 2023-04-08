@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/stagePass/osiris-ui/compare/v1.1.0...v1.2.0) (2023-04-08)
+
+
+### Features
+
+* testing npm private package ([886c8a1](https://github.com/stagePass/osiris-ui/commit/886c8a19797ef22a7c1c53106a7f2af40c66412d))
+* testing npm private package ([7a23e99](https://github.com/stagePass/osiris-ui/commit/7a23e998da01acc3ea6313ebbbf6bc70a365ab81))
+* testing npm private package ([276574f](https://github.com/stagePass/osiris-ui/commit/276574f9542ea5771fb8b42015b9cf2aa864d646))
+
 # [1.1.0](https://github.com/stagePass/osiris-ui/compare/v1.0.1...v1.1.0) (2023-04-08)
 
 
