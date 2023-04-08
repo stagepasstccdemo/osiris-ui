@@ -4,6 +4,9 @@
   "repository": {
     "url": "git@github.com:stagePass/osiris-ui.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "start": "webpack serve --port 8081",
     "start:standalone": "webpack serve --env standalone",
