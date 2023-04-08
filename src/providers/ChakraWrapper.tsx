@@ -14,8 +14,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 //   },
 // });
 
-const ChakraWrapper = ({ children }) => (
-  <ChakraProvider>{children}</ChakraProvider>
-);
+function ChakraWrapper({ children }) {
+  return <ChakraProvider>{children}</ChakraProvider>;
+}
 
 export default ChakraWrapper;
