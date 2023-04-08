@@ -16,6 +16,22 @@
         "useESModules": true,
         "regenerator": false
       }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@components": "./src/components",
+          "@atoms": "./src/components/atoms",
+          "@molecules": "./src/components/molecules",
+          "@organisms": "./src/components/organisms",
+          "@pages": "./src/components/pages",
+          "@hooks": "./src/hooks",
+          "@utils": "./src/utils",
+          "@providers": "./src/providers"
+        }
+      }
     ]
   ],
   "env": {
