@@ -13,6 +13,7 @@
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "prepare": "husky install",
+    "commit": "git-cz",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc",
     "deploy": "sh deploy.sh",
@@ -52,7 +53,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^7.0.2",
+    "husky": "^8.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "jest-cli": "^27.0.6",
@@ -74,6 +75,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "1.8.8",
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@types/jest": "^27.0.1",
@@ -81,11 +84,18 @@
     "@types/react-dom": "^18.0.0",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
+    "commitizen": "^4.3.0",
     "framer-motion": "^6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^4.3.1"
+    "single-spa-react": "^4.3.1",
+    "ts-node": "^10.9.1"
   },
-  "types": "dist/stagepass-osiris-ui.d.ts"
+  "types": "dist/stagepass-osiris-ui.d.ts",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
