@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: "jit", // faster build times
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -31,5 +32,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ]
 };
