@@ -22,3 +22,9 @@ export default {
 } as Meta
 
 export const Default : StoryObj = {}
+
+export const WithCustomImage : StoryObj = {
+  args: {
+    src: "https://github.com/fillipeags.png"
+  },
+}
