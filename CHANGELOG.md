@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/stagePass/osiris-ui/compare/v1.3.1...v1.3.2) (2023-04-10)
+
+
+### Bug Fixes
+
+* outdaded package version on deploy pipeline ([86af6b6](https://github.com/stagePass/osiris-ui/commit/86af6b6ca4497516cd8f693892fa5d0d39ac1005))
+
 ## [1.3.1](https://github.com/stagePass/osiris-ui/compare/v1.3.0...v1.3.1) (2023-04-10)
 
 
