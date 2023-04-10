@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/stagePass/osiris-ui/compare/v1.2.1...v1.3.0) (2023-04-10)
+
+
+### Bug Fixes
+
+* storybook settings ([04ddeec](https://github.com/stagePass/osiris-ui/commit/04ddeec3404e41a0ee7b088116d40010cffacb1e))
+
+
+### Features
+
+* customize design system styleguide tailwind settings ([fcec85d](https://github.com/stagePass/osiris-ui/commit/fcec85dd4c4725700ed0d2148d7929066d239e80))
+
 ## [1.2.1](https://github.com/stagePass/osiris-ui/compare/v1.2.0...v1.2.1) (2023-04-08)
 
 
