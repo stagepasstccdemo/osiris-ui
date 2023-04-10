@@ -1,8 +1,17 @@
+const colors = require('./src/theme/colors');
+const typography = require('./src/theme/typography');
+const shadows = require('./src/theme/shadows');
+
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: "jit", // faster build times
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: Object.assign({}, colors, typography, shadows),
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+  ]
 };

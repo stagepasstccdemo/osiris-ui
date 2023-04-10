@@ -1,10 +1,27 @@
 {
-  "extends": "ts-config-single-spa",
+  "extends": "ts-config-single-spa", 
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "jsx": "react-jsx", // makes it possible to use JSX in .tsx files
+    "declarationDir": "dist",  // output directory for generated declaration files
+    "declaration": true, // enable generation of declaration files
+    "declarationMap": true, // enable generation of sourcemaps for declaration files
+    "allowJs": true, // allow javascript files to be compiled 
+    "emitDeclarationOnly": true, // only output d.ts files and not javascript files
+    "skipLibCheck": true, // skip type checking of declaration files
+    "outDir": "dist", // output directory for compiled files
+    "baseUrl": "./", // base directory to resolve non-relative module names
+    "paths": { // path mapping to be computed relative to baseUrl option
+      "@components/*": ["src/components/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@pages/*": ["src/components/pages/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/utils/*"],
+      "@providers/*": ["src/providers/*"],
+    }
   },
-  "files": ["src/stagepass-osiris-ui.tsx"],
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "files": ["src/stagepass-osiris-ui.tsx"], // list of files to be included in compilation
+  "include": ["src/**/*"], // list of files to be included in compilation
+  "exclude": ["src/**/*.test*"] // list of files to be excluded from compilation
 }

@@ -14,7 +14,23 @@
       "@babel/plugin-transform-runtime",
       {
         "useESModules": true,
-        "regenerator": false
+        "regenerator": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@components": "./src/components",
+          "@atoms": "./src/components/atoms",
+          "@molecules": "./src/components/molecules",
+          "@organisms": "./src/components/organisms",
+          "@pages": "./src/components/pages",
+          "@hooks": "./src/hooks",
+          "@utils": "./src/utils",
+          "@providers": "./src/providers"
+        }
       }
     ]
   ],
