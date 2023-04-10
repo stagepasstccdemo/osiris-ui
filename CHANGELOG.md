@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/stagePass/osiris-ui/compare/v1.3.4...v1.3.5) (2023-04-10)
+
+
+### Bug Fixes
+
+* tailwind theme not applying ([ef3aeb3](https://github.com/stagePass/osiris-ui/commit/ef3aeb3a1850df5e730ecd1c879b8273922dd3db))
+
 ## [1.3.4](https://github.com/stagePass/osiris-ui/compare/v1.3.3...v1.3.4) (2023-04-10)
 
 
