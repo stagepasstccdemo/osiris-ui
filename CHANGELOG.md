@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/stagePass/osiris-ui/compare/v1.3.2...v1.3.3) (2023-04-10)
+
+
+### Bug Fixes
+
+* testing new ci-deploy pipeline ([a3daca2](https://github.com/stagePass/osiris-ui/commit/a3daca2989537256d6138eee17ff98e257ec3a5a))
+
 ## [1.3.2](https://github.com/stagePass/osiris-ui/compare/v1.3.1...v1.3.2) (2023-04-10)
 
 
