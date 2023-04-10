@@ -7,7 +7,11 @@ export default {
   mode: "jit", // faster build times
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: Object.assign({}, colors, typography, shadows),
+    extend: {
+      colors,
+      typography,
+      shadows,
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
