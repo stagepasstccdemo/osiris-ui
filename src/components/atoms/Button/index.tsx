@@ -4,7 +4,12 @@ import ChakraWrapper from "@providers/ChakraWrapper";
 export const Button = ({ ...props }) => {
   return (
     <ChakraWrapper>
-      <ChakraButton {...props} />
+      <ChakraButton
+        _hover={{
+          opacity: 0.6,
+        }}
+        {...props}
+      />
     </ChakraWrapper>
   );
 };
