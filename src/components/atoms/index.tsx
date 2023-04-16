@@ -4,6 +4,7 @@ export * from "./Pills";
 export * from "./Badge";
 export * from "./Heading";
 export * from "./Text";
+export * from "./Button";
 
 export {
   Center,
