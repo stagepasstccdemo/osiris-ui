@@ -1,5 +1,5 @@
 import { Badge } from "@chakra-ui/react";
-import { colorMap, TextBadgeProps } from "./types";
+import { boxShadowMap, colorMap, TextBadgeProps } from "./types";
 
 const styles = {
   default: "bg-slate-50 rounded-2xl text-left",
@@ -13,6 +13,7 @@ export const TextBadge = ({
   color = "white",
   bgColor = "default",
   fontWeight = "bold",
+  boxShadow = "threeD",
   children,
   ...props
 }: TextBadgeProps) => {
@@ -23,6 +24,7 @@ export const TextBadge = ({
       fontWeight={fontWeight}
       color={color}
       bgColor={bgColor ? colorMap[bgColor] : "slate"}
+      boxShadow={boxShadow ? boxShadowMap[boxShadow] : "threeD"}
       className={`${styles.default} ${styles.variant[variant]}`}
       {...props}
     >
