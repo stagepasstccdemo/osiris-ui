@@ -1,3 +1,13 @@
+# [1.5.0](https://github.com/stagePass/osiris-ui/compare/v1.4.0...v1.5.0) (2023-04-16)
+
+
+### Features
+
+* create new atoms and molecules for reuse ([f0a9bf2](https://github.com/stagePass/osiris-ui/commit/f0a9bf2a3601f35c24587e9773187f0f56f4a1fa))
+* create new molecules to code reusing ([99ed174](https://github.com/stagePass/osiris-ui/commit/99ed174d5c33b92d75d188f82e991dbe8bc04234))
+* evolve Badge component props ([7092e8f](https://github.com/stagePass/osiris-ui/commit/7092e8f41103fea2aeec7df937bc32e3928e413a))
+* restructure components and create new props ([515a302](https://github.com/stagePass/osiris-ui/commit/515a3026e4ab51f628744a5d6fd58611454dee17))
+
 # [1.4.0](https://github.com/stagePass/osiris-ui/compare/v1.3.5...v1.4.0) (2023-04-16)
 
 
