@@ -1,13 +1,13 @@
-import RootContainer from "@providers/index";
-import { Image, ImageProps } from "@chakra-ui/react";
-import { FiUser } from "react-icons/fi";
+import ChakraWrapper from "@providers/ChakraWrapper";
 
-export interface ILogoProps extends ImageProps {}
+import { Image } from "@chakra-ui/react";
+import { FiUser } from "react-icons/fi";
+import { ILogoProps } from "./types";
 
 export const Logo = ({ ...props }: ILogoProps) => {
   return (
-    <RootContainer>
+    <ChakraWrapper>
       <Image fallback={<FiUser />} {...props} />
-    </RootContainer>
+    </ChakraWrapper>
   );
 };

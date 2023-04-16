@@ -23,4 +23,8 @@ module.exports = {
     600: "#292A35",
     700: "#151621",
   },
+  alert: {
+    danger: "#EB5757",
+    success: "#27AE60",
+  },
 };
