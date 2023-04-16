@@ -1,21 +1,27 @@
-import { ChakraProvider } from "@chakra-ui/react";
-// import {  extendTheme } from "@chakra-ui/react";
-// import { ThemeProvider } from "@emotion/react";
-// import { mode } from "@chakra-ui/theme-tools";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-// const customTheme = extendTheme({
-//   styles: {
-//     global: (props) => ({
-//       body: {
-//         bg: mode("gray.50", "gray.900")(props),
-//         color: mode("gray.800", "whiteAlpha.900")(props),
-//       },
-//     }),
-//   },
-// });
+const colors = require("../theme/colors");
+const typography = require("../theme/typography");
+
+const customTheme = extendTheme({
+  fonts: {
+    heading: "Montserrat, sans-serif",
+  },
+  fontSizes: {
+    headlines: {
+      ...typography.fontSize.headlines,
+    },
+  },
+  colors: {
+    ...colors,
+  },
+  fontWeights: {
+    bold: 700,
+  },
+});
 
 function ChakraWrapper({ children }) {
-  return <ChakraProvider>{children}</ChakraProvider>;
+  return <ChakraProvider theme={customTheme}>{children}</ChakraProvider>;
 }
 
 export default ChakraWrapper;

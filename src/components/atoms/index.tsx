@@ -2,6 +2,16 @@ export * from "./Navigate";
 export * from "./Logo";
 export * from "./Pills";
 export * from "./Badge";
-export * from "./Heading"
+export * from "./Heading";
+export * from "./Text";
 
-export { Center, Box, Flex, CircularProgress, Progress, Spinner, Stack } from "@chakra-ui/react";
+export {
+  Center,
+  Box,
+  Flex,
+  CircularProgress,
+  Progress,
+  Spinner,
+  Image,
+  Stack,
+} from "@chakra-ui/react";

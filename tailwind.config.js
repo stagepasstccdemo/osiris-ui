@@ -1,6 +1,6 @@
-const colors = require('./src/theme/colors');
-const typography = require('./src/theme/typography');
-const shadows = require('./src/theme/shadows');
+const colors = require("./src/theme/colors");
+const typography = require("./src/theme/typography");
+const shadows = require("./src/theme/shadows");
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -11,11 +11,11 @@ export default {
       colors,
       typography,
       shadows,
-    }
+    },
   },
   plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-  ]
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
