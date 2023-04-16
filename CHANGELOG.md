@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/stagePass/osiris-ui/compare/v1.3.5...v1.4.0) (2023-04-16)
+
+
+### Features
+
+* create custom heading component ([b861080](https://github.com/stagePass/osiris-ui/commit/b861080adfa115e8cd898c5cbeb4550dd999e94e))
+* create new components and set tailwind|chakra integration ([d9e4da0](https://github.com/stagePass/osiris-ui/commit/d9e4da056992959b84c417642f757349d22c2902))
+* export new button icon ([a05beb3](https://github.com/stagePass/osiris-ui/commit/a05beb3e4d8f0cac7fd52d0e50bcea548c07e832))
+
 ## [1.3.5](https://github.com/stagePass/osiris-ui/compare/v1.3.4...v1.3.5) (2023-04-10)
 
 
