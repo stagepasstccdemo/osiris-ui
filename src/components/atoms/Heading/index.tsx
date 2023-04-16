@@ -16,7 +16,9 @@ export const Heading = ({ as, ...props }) => {
           fontSize,
         }}
         {...props}
-      />
+      >
+        {props.children || props.text}
+      </ChakraHeading>
     </ChakraWrapper>
   );
 };

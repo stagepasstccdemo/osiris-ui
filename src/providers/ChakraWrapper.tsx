@@ -1,22 +1,26 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-const colors = require("../theme/colors");
-const typography = require("../theme/typography");
+const shadows = require("@theme/shadows");
+const colors = require("@theme/colors");
+const typography = require("@theme/typography");
 
 const customTheme = extendTheme({
   fonts: {
-    heading: "Montserrat, sans-serif",
+    heading: typography.fontFamily.primary[0],
+    body: typography.fontFamily.primary[0],
+    ...typography.fontFamily,
   },
   fontSizes: {
-    headlines: {
-      ...typography.fontSize.headlines,
-    },
+    ...typography.fontSize,
+  },
+  fontWeights: {
+    ...typography.fontWeight,
   },
   colors: {
     ...colors,
   },
-  fontWeights: {
-    bold: 700,
+  shadows: {
+    ...shadows.boxShadow,
   },
 });
 

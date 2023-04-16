@@ -29,7 +29,8 @@
           "@pages": "./src/components/pages",
           "@hooks": "./src/hooks",
           "@utils": "./src/utils",
-          "@providers": "./src/providers"
+          "@providers": "./src/providers",
+          "@theme": "./src/theme"
         }
       }
     ]

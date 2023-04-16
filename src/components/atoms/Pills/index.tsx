@@ -1,9 +1,5 @@
 import { styles } from "./styles";
-
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
-type PillsProps = ButtonProps & {
-  selected?: boolean;
-};
+import { PillsProps } from "./types";
 
 export const Pills = ({ selected = false }: PillsProps) => {
   return (

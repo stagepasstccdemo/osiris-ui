@@ -4,7 +4,7 @@ import ChakraWrapper from "@providers/ChakraWrapper";
 export const Text = ({ ...props }) => {
   return (
     <ChakraWrapper>
-      <ChakraUiText {...props} />
+      <ChakraUiText {...props}>{props.children || props.text}</ChakraUiText>
     </ChakraWrapper>
   );
 };

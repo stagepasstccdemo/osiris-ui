@@ -1,9 +1,6 @@
 import { navigateToUrl } from "single-spa";
-
-interface IPropsNavigate {
-  path: string;
-  children?: React.ReactNode;
-}
+import { Button } from "@components/atoms";
+import { IPropsNavigate } from "./types";
 
 export const Navigate: React.FC<IPropsNavigate> = (props: IPropsNavigate) => {
   const redirect = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -12,26 +9,14 @@ export const Navigate: React.FC<IPropsNavigate> = (props: IPropsNavigate) => {
   };
 
   return (
-    <>
-      <h1 className="font-bold  text-gray-100 bg-os-ternary-100 p-4 w-[128px] text-center cursor-pointer">
-        Hello world!
-      </h1>
-      <button
-        aria-label={`Go to page ${props.children}`}
-        type="button"
-        name={props.path}
-        onClick={redirect}
-        style={{
-          cursor: "pointer",
-          background: "green",
-          color: "white",
-          padding: "20px 40px",
-          border: "none",
-        }}
-      >
-        {props.children}
-      </button>
-    </>
+    <Button
+      aria-label={`Go to page ${props.children}`}
+      type="button"
+      name={props.path}
+      onClick={redirect}
+    >
+      {props.children}
+    </Button>
   );
 };
 

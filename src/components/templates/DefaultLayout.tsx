@@ -7,7 +7,7 @@ const styles = {
 export const DefaultLayout = ({ children }) => {
   return (
     <main className={styles.main}>
-      <div className={styles.content}>{children}</div>
+      <section className={styles.content}>{children}</section>
     </main>
   );
 };
