@@ -19,6 +19,7 @@
       "@hooks/*": ["src/hooks/*"],
       "@utils/*": ["src/utils/*"],
       "@providers/*": ["src/providers/*"],
+      "@theme/*": ["src/theme/*"],
     }
   },
   "files": ["src/stagepass-osiris-ui.tsx"], // list of files to be included in compilation
