@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const colors = require("./src/theme/colors");
 const typography = require("./src/theme/typography");
 const shadows = require("./src/theme/shadows");

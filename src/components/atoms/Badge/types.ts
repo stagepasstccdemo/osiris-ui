@@ -33,5 +33,6 @@ export type TextBadgeProps = BadgeProps & {
   bgColor?: keyof ColorScheme;
   boxShadow?: keyof ShadowMap;
   fontWeight?: keyof typeof tailwindColors.fontWeight;
+  text: string;
   children: React.ReactNode;
 };

@@ -14,6 +14,7 @@ export const TextBadge = ({
   bgColor = "default",
   fontWeight = "bold",
   boxShadow = "threeD",
+  text,
   children,
   ...props
 }: TextBadgeProps) => {
@@ -28,7 +29,7 @@ export const TextBadge = ({
       className={`${styles.default} ${styles.variant[variant]}`}
       {...props}
     >
-      {children}
+      {text || children}
     </Badge>
   );
 };
