@@ -1,6 +1,7 @@
 import { styles } from "./styles";
 
-type PillsProps = {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+type PillsProps = ButtonProps & {
   selected?: boolean;
 };
 

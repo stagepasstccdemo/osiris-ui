@@ -12,7 +12,6 @@ export const TextBadge = ({
       px={16}
       py={10}
       bgColor={color ? colorMap[color] : "slate"}
-      color="white"
       className="bg-slate-50 rounded-3xl text-left"
       {...props}
     >
