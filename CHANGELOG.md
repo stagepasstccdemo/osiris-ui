@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/stagePass/osiris-ui/compare/v1.5.0...v1.6.0) (2023-04-17)
+
+
+### Features
+
+* set pills as a button ([dc61039](https://github.com/stagePass/osiris-ui/commit/dc61039a924ce426ea7a454b3cc0da539e877402))
+
 # [1.5.0](https://github.com/stagePass/osiris-ui/compare/v1.4.0...v1.5.0) (2023-04-16)
 
 
