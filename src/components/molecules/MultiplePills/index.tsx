@@ -1,11 +1,6 @@
-import { Flex, FlexProps } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Pills } from "@components/atoms";
-import { PillsProps } from "@components/atoms/Pills/types";
-
-type MultiplePillsProps = PillsProps &
-  FlexProps & {
-    pills: PillsProps[];
-  };
+import { MultiplePillsProps } from "./types";
 
 export const MultiplePills = ({ pills, ...props }: MultiplePillsProps) => {
   const renderPills = () => {
