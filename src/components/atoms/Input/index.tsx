@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {
+  FormErrorMessage,
   Input as ChakraInput,
   InputGroup,
   InputRightElement,
@@ -8,9 +9,10 @@ import {
 import ChakraWrapper from "@providers/ChakraWrapper";
 
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { Text } from "../Text";
 
 export const Input = ({ type, ...props }) => {
-  const { name, register } = props;
+  const { name, register, error } = props;
 
   const [visibility, setVisibility] = useState(false);
   const handleToggleVisibility = () => setVisibility(!visibility);
@@ -32,7 +34,7 @@ export const Input = ({ type, ...props }) => {
 
   return (
     <ChakraWrapper>
-      <InputGroup>
+      <InputGroup flexDirection="column">
         <ChakraInput
           id={name}
           type={type !== "password" ? type : visibility ? "text" : "password"}
@@ -45,6 +47,7 @@ export const Input = ({ type, ...props }) => {
             {helperIcon()}
           </InputRightElement>
         )}
+        {error && <Text color="alert.danger">{error.message}</Text>}
       </InputGroup>
     </ChakraWrapper>
   );
