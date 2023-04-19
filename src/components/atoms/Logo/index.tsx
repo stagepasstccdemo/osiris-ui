@@ -7,7 +7,7 @@ import { ILogoProps } from "./types";
 export const Logo = ({ ...props }: ILogoProps) => {
   return (
     <ChakraWrapper>
-      <Image fallback={<FiUser />} {...props} />
+      <Image {...props} />
     </ChakraWrapper>
   );
 };

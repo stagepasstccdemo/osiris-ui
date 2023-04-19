@@ -1,30 +1,32 @@
-
 import { Meta, StoryObj } from "@storybook/react";
 
 import { Logo } from ".";
 
 export default {
-  title: 'Components/Atoms/Logo',
+  title: "Components/Atoms/Logo",
   component: Logo,
   decorators: [
     (Story) => {
-     return ( 
-     <div style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-     }}>
-        {Story()}
-      </div> )
-    }
+      return (
+        <div
+          style={{
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {Story()}
+        </div>
+      );
+    },
   ],
-} as Meta
+} as Meta;
 
-export const Default : StoryObj = {}
+export const Default: StoryObj = {};
 
-export const WithCustomImage : StoryObj = {
+export const WithCustomImage: StoryObj = {
   args: {
-    src: "https://github.com/fillipeags.png"
+    src: "https://github.com/fillipeags.png",
   },
-}
+};

@@ -17,4 +17,5 @@ export {
   Spinner,
   Image,
   Stack,
+  Skeleton,
 } from "@chakra-ui/react";
