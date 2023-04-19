@@ -34,7 +34,7 @@ export const Input = ({ type, ...props }) => {
 
   return (
     <ChakraWrapper>
-      <InputGroup flexDirection="column">
+      <InputGroup flexDirection="column" height="3.5rem">
         <ChakraInput
           id={name}
           type={type !== "password" ? type : visibility ? "text" : "password"}
