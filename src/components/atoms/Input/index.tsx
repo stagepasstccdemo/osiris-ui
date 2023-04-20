@@ -43,7 +43,7 @@ export const Input = ({ type, ...props }) => {
           {...props}
         />
         {type === "password" && (
-          <InputRightElement h="100%" mr="0.5rem">
+          <InputRightElement h="100%" mr="0.5rem" mt="-2px">
             {helperIcon()}
           </InputRightElement>
         )}
