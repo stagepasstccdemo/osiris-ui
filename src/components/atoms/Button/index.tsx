@@ -8,6 +8,9 @@ export const Button = ({ ...props }) => {
         _hover={{
           opacity: 0.6,
         }}
+        alignSelf="center"
+        width="inherit"
+        maxWidth={["100%", "40%"]}
         {...props}
       />
     </ChakraWrapper>
