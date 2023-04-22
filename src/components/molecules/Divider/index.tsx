@@ -13,3 +13,12 @@ export const Divider = ({ ...props }) => {
     </ChakraWrapper>
   );
 };
+
+Divider.defaultProps = {
+  text: "or",
+  border: "1",
+  distance: "6",
+  borderColor: "gray.700",
+  borderWidth: "2px",
+  rounded: "full",
+};
