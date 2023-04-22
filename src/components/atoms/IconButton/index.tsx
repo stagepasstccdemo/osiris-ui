@@ -1,5 +1,5 @@
-import { IconButton as ChakraIconButton } from "@chakra-ui/react";
 import ChakraWrapper from "@providers/ChakraWrapper";
+import { IconButton as ChakraIconButton } from "@chakra-ui/react";
 
 export const IconButton = ({ ...props }) => {
   return (
