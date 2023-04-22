@@ -1,3 +1,26 @@
+# [1.7.0](https://github.com/stagePass/osiris-ui/compare/v1.6.0...v1.7.0) (2023-04-22)
+
+
+### Bug Fixes
+
+* alignment on icon inside button ([be238e7](https://github.com/stagePass/osiris-ui/commit/be238e749d557183ec001098b28c6c3c636ddc4a))
+* input icon eye position ([75222b7](https://github.com/stagePass/osiris-ui/commit/75222b7006a1ed23b40de1e772b99b3a82efdb2d))
+* position on eye icon inside input type password ([6019740](https://github.com/stagePass/osiris-ui/commit/6019740a1c128b21d8bc59c4f97caa2dafebbd4b))
+
+
+### Features
+
+* add error message possibility on input field ([6147bd2](https://github.com/stagePass/osiris-ui/commit/6147bd205d4ae027ec6a2a91d9c062fbba68faf9))
+* create compound components for Forms ([ddd555c](https://github.com/stagePass/osiris-ui/commit/ddd555cba4f8366be1ec28ed59b81dff164c2e8a))
+* create toaster ([5df96e0](https://github.com/stagePass/osiris-ui/commit/5df96e0074bb56750e5aa10e3ec9420c4d6f866e))
+* creates new storybook documentation for atoms ([a0953f9](https://github.com/stagePass/osiris-ui/commit/a0953f9117370567020e6d8e417ba8c6725cd40b))
+* evolve input component to allow show/hide on passwords ([64d6e2d](https://github.com/stagePass/osiris-ui/commit/64d6e2d53bf5fe4b623d8e7a286d580e11a685c0))
+* isolate types into separate files and fix any types ([2ac75d8](https://github.com/stagePass/osiris-ui/commit/2ac75d89aedadf73174c4be2d592253d04c3be5a))
+* pass form-refs hoc ([456d3eb](https://github.com/stagePass/osiris-ui/commit/456d3ebb9998baa4f37ecfecd34a5a0487c8a362))
+* pass setPage to multiplepills components ([53f6f02](https://github.com/stagePass/osiris-ui/commit/53f6f0253a192912d858800dcc31933db8fd4404))
+* remove fallBackSrc on logo by default ([45ebbda](https://github.com/stagePass/osiris-ui/commit/45ebbda46e82da7d89931a02a1cfe2de43c7fc7c))
+* update responsivness and creates Form component ([db52c46](https://github.com/stagePass/osiris-ui/commit/db52c4613383f40ab5ff5324ed8a3baf257e3d79))
+
 # [1.6.0](https://github.com/stagePass/osiris-ui/compare/v1.5.0...v1.6.0) (2023-04-17)
 
 
