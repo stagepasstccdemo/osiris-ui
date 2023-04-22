@@ -1,11 +1,6 @@
-import { Flex, FlexProps } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { TextBadge } from "@components/atoms";
-import { TextBadgeProps } from "@components/atoms/Badge/types";
-
-type MultipleBadgesProps = TextBadgeProps &
-  FlexProps & {
-    badges: TextBadgeProps[];
-  };
+import { MultipleBadgesProps } from "./types";
 
 export const MultipleBadges = ({ badges, ...props }: MultipleBadgesProps) => {
   const renderBadges = () => {

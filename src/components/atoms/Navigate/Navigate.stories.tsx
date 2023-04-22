@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import { Logo } from ".";
+import { Navigate } from ".";
 
 export default {
-  title: "Components/Atoms/Logo",
-  component: Logo,
+  title: "Components/Atoms/Navigate",
+  component: Navigate,
   decorators: [
     (Story) => {
       return (
@@ -24,9 +24,3 @@ export default {
 } as Meta;
 
 export const Default: StoryObj = {};
-
-export const WithCustomImage: StoryObj = {
-  args: {
-    src: "https://github.com/fillipeags.png",
-  },
-};

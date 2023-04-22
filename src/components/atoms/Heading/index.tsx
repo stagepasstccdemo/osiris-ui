@@ -1,5 +1,5 @@
-import { Heading as ChakraHeading } from "@chakra-ui/react";
 import ChakraWrapper from "@providers/ChakraWrapper";
+import { Heading as ChakraHeading } from "@chakra-ui/react";
 
 const tailwind = require("../../../theme/typography");
 

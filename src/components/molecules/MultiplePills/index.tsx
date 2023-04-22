@@ -1,16 +1,16 @@
-import { Flex, FlexProps } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Pills } from "@components/atoms";
 import { PillsProps } from "@components/atoms/Pills/types";
+import { MultiplePillsProps } from "./types";
 
-type MultiplePillsProps = PillsProps &
-  FlexProps & {
-    pills: PillsProps[];
-  };
-
-export const MultiplePills = ({ pills, ...props }: MultiplePillsProps) => {
+export const MultiplePills = ({
+  pills,
+  setPage,
+  ...props
+}: MultiplePillsProps) => {
   const renderPills = () => {
     return pills.map(({ key, selected, onClick }) => (
-      <Pills key={key} selected={selected} onClick={onClick} />
+      <Pills key={key} selected={selected} onClick={() => onClick(setPage)} />
     ));
   };
 
