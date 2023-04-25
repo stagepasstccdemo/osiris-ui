@@ -8,6 +8,8 @@ type ColorScheme = {
   primary: string;
   secondary: string;
   ternary: string;
+  highlightOrange: string;
+  lightPurple: string;
 };
 
 type ShadowMap = {
@@ -20,6 +22,8 @@ export const colorMap: Record<keyof ColorScheme, string> = {
   primary: tailwindColors["os-ternary"][200],
   secondary: tailwindColors["os-ternary"][300],
   ternary: tailwindColors.alert.success,
+  highlightOrange: tailwindColors["os-primary"][100],
+  lightPurple: tailwindColors.gray[200],
 };
 
 export const boxShadowMap: Record<keyof ShadowMap, string> = {
@@ -33,6 +37,6 @@ export type TextBadgeProps = BadgeProps & {
   bgColor?: keyof ColorScheme;
   boxShadow?: keyof ShadowMap;
   fontWeight?: keyof typeof tailwindColors.fontWeight;
-  text: string;
-  children: React.ReactNode;
+  text?: string;
+  children?: React.ReactNode;
 };
