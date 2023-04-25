@@ -2,7 +2,7 @@ import { Flex } from "../Flex";
 
 type SimpleDividerProps = {
   numDots: number;
-  padding: number;
+  padding: string | number;
 };
 
 export const SimpleDivider = ({ numDots, padding }: SimpleDividerProps) => {

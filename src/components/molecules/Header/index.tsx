@@ -23,19 +23,17 @@ export const Header = ({
           width="180px"
           {...imageProps}
         />
-        <Flex>
-          <Button
-            bgColor="os-primary.100"
-            width="50px"
-            height="50px"
-            rounded="15px"
-            {...buttonProps}
-          >
-            <Text color="gray.100" {...textProps}>
-              {userProfile}
-            </Text>
-          </Button>
-        </Flex>
+        <Button
+          bgColor="os-primary.100"
+          width="3.125rem"
+          height="3.125rem"
+          rounded="15px"
+          {...buttonProps}
+        >
+          <Text color="gray.100" {...textProps}>
+            {userProfile}
+          </Text>
+        </Button>
       </Flex>
     </header>
   );

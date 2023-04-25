@@ -11,6 +11,7 @@ export * from "./Toast";
 export * from "./Flex";
 export * from "./Box";
 export * from "./SimpleDivider";
+export * from "./BulletPoint";
 
 export {
   Center,
