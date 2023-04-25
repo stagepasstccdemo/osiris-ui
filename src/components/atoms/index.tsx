@@ -8,14 +8,15 @@ export * from "./Button";
 export * from "./IconButton";
 export * from "./Input";
 export * from "./Toast";
+export * from "./Flex";
+export * from "./Box";
+export * from "./SimpleDivider";
 
 export {
   Center,
   CircularProgress,
   Progress,
   Spinner,
-  Flex,
-  Box,
   Image,
   Stack,
   Skeleton,
