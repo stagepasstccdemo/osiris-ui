@@ -21,4 +21,6 @@ export {
   Image,
   Stack,
   Skeleton,
+  Flex as FlexContainer,
+  Box as BoxContainer,
 } from "@chakra-ui/react";

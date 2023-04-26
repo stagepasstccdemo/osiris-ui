@@ -16,13 +16,14 @@ export const TextBadge = ({
   return (
     <ChakraWrapper>
       <Badge
-        px={16}
-        py={10}
+        px={4}
+        py={4}
         fontWeight={fontWeight}
         color={color}
         bgColor={bgColor ? colorMap[bgColor] : "slate"}
         boxShadow={boxShadow ? boxShadowMap[boxShadow] : "threeD"}
         className={`${styles.default} ${styles.variant[variant]}`}
+        borderRadius="full"
         {...props}
       >
         {text || children}
