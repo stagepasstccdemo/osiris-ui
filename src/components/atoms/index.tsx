@@ -12,6 +12,7 @@ export * from "./Flex";
 export * from "./Box";
 export * from "./SimpleDivider";
 export * from "./BulletPoint";
+export * from "./Loading";
 
 export {
   Center,
