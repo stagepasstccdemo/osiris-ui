@@ -1,5 +1,5 @@
 export interface BigCardProps {
-  key: number;
+  key?: number;
   sourceBannerImg: string;
   titleCard: string;
   legendCard: string;

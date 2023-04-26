@@ -9,4 +9,6 @@ export type FilteredCardsProps = {
   textProps?: TextProps;
   textBadgeProps?: TextBadgeProps;
   renderList?: BigCardProps[];
+  hasSeeMoreOption?: boolean;
+  cardType?: "big" | "numbered";
 };

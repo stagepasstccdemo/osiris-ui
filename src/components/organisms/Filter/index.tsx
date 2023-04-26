@@ -12,6 +12,7 @@ export const Filter = ({
   flexProps,
   boxProps,
   textProps,
+  children,
 }: FilterProps) => {
   return (
     <Flex flexDirection="column" {...flexProps}>
@@ -42,6 +43,7 @@ export const Filter = ({
         </Flex>
       </Box>
       <MultipleBadges mt="1.25rem" gap="10px" badges={renderBadgesList} />
+      <Box mt="2rem">{children}</Box>
     </Flex>
   );
 };

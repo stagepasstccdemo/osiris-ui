@@ -9,4 +9,5 @@ export type FilterProps = {
   flexProps?: FlexProps;
   boxProps?: BoxProps;
   textProps?: TextProps;
+  children?: React.ReactNode;
 };
