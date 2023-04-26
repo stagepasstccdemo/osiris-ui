@@ -1,3 +1,20 @@
+# [1.8.0](https://github.com/stagePass/osiris-ui/compare/v1.7.0...v1.8.0) (2023-04-26)
+
+
+### Bug Fixes
+
+* flex problems due to theming ([fc9fdd2](https://github.com/stagePass/osiris-ui/commit/fc9fdd25ccbb03155ac8c916856a3d1dadb04bea))
+
+
+### Features
+
+* allow filteredCards to render a big card list items ([9fa215d](https://github.com/stagePass/osiris-ui/commit/9fa215db37dc9f0fabaa0417d030dd6047c697f8))
+* create bullet point and cards compound components structure ([cd073da](https://github.com/stagePass/osiris-ui/commit/cd073dafac7dd1751cd5d8cf025c310bd48f4785))
+* create loading splash ([e903c74](https://github.com/stagePass/osiris-ui/commit/e903c74be2b0764251768371299104884e112460))
+* create new design-system components such as atoms|molecules|organisms|templates ([1f64610](https://github.com/stagePass/osiris-ui/commit/1f646102297ebd0f8edf683465f7fee4094a2e30))
+* create new molecules and organisms for card components ([11a0523](https://github.com/stagePass/osiris-ui/commit/11a0523cc86454749a19f8ce7847f45d5bf16cd0))
+* create simple divider and use internal box and flex components ([33bb4e8](https://github.com/stagePass/osiris-ui/commit/33bb4e82d5847d495fb63334d23026365553514c))
+
 # [1.7.0](https://github.com/stagePass/osiris-ui/compare/v1.6.0...v1.7.0) (2023-04-22)
 
 
