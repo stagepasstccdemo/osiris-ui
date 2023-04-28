@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/stagePass/osiris-ui/compare/v1.8.0...v1.9.0) (2023-04-28)
+
+
+### Features
+
+* create modal ([77fa2fb](https://github.com/stagePass/osiris-ui/commit/77fa2fb24c8a715bb3be9a8ee276b3a689b04b87))
+* create slider component and responsivness rules ([4d32388](https://github.com/stagePass/osiris-ui/commit/4d32388fe28c5119ed975365bf1ee43b8f43485a))
+* make cards and swiper responsive ([50e3576](https://github.com/stagePass/osiris-ui/commit/50e3576d1ee77d50d205525f115bf4f7345d3092))
+
 # [1.8.0](https://github.com/stagePass/osiris-ui/compare/v1.7.0...v1.8.0) (2023-04-26)
 
 
