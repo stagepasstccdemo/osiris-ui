@@ -3,6 +3,8 @@ import { Box, Text, TextBadge } from "@components/atoms";
 import { Card } from "@components/molecules";
 import { BigCardProps } from "@components/molecules/Card/BigCard/types";
 import { NumberedCardProps } from "@components/molecules/Card/NumberedCard/types";
+import { Swiper } from "@components/atoms/Swiper";
+import { SwiperSlide } from "swiper/react";
 import { FilteredCardsProps } from "./types";
 
 export const FilteredCards = ({
@@ -16,30 +18,52 @@ export const FilteredCards = ({
   cardType,
 }: FilteredCardsProps) => {
   const renderListMap = () => {
-    return renderList.map((item: BigCardProps) => (
-      <Card.Big
-        key={item.key}
-        sourceBannerImg={item.sourceBannerImg}
-        titleCard={item.titleCard}
-        legendCard={item.legendCard}
-        detailsDescriptionCard={item.detailsDescriptionCard}
-        priceTag={item.priceTag}
-        textButtonLabel={item.textButtonLabel}
-        hasParentalHating={item.hasParentalHating}
-        parentalRating={item.parentalRating}
-      />
-    ));
+    return (
+      <Swiper>
+        {renderList.map(
+          ({
+            key,
+            sourceBannerImg,
+            titleCard,
+            legendCard,
+            detailsDescriptionCard,
+            priceTag,
+            textButtonLabel,
+            hasParentalHating,
+            parentalRating,
+          }: BigCardProps) => (
+            <SwiperSlide key={key}>
+              <Card.Big
+                sourceBannerImg={sourceBannerImg}
+                titleCard={titleCard}
+                legendCard={legendCard}
+                detailsDescriptionCard={detailsDescriptionCard}
+                priceTag={priceTag}
+                textButtonLabel={textButtonLabel}
+                hasParentalHating={hasParentalHating}
+                parentalRating={parentalRating}
+              />
+            </SwiperSlide>
+          )
+        )}
+      </Swiper>
+    );
   };
 
   const renderNumberedListMap = () => {
-    return renderList.map((item: NumberedCardProps) => (
-      <Card.Numbered
-        key={item.key}
-        sourceBannerImg={item.sourceBannerImg}
-        titleCard={item.titleCard}
-        numberInCard={item.numberInCard}
-      />
-    ));
+    return (
+      <Swiper>
+        {renderList.map((item: NumberedCardProps) => (
+          <SwiperSlide key={item.key}>
+            <Card.Numbered
+              sourceBannerImg={item.sourceBannerImg}
+              titleCard={item.titleCard}
+              numberInCard={item.numberInCard}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    );
   };
 
   return (

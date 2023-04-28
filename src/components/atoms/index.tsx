@@ -13,6 +13,7 @@ export * from "./Box";
 export * from "./SimpleDivider";
 export * from "./BulletPoint";
 export * from "./Loading";
+export * from "./Swiper";
 
 export {
   Center,
