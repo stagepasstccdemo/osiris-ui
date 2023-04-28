@@ -7,7 +7,7 @@ export const NumberedCard = ({
   numberInCard,
 }: NumberedCardProps) => {
   return (
-    <Flex flexDirection="row" alignItems="flex-end" ml="-1.25rem">
+    <Flex flexDirection="row" alignItems="flex-end" ml=".25rem" mb="2.5rem">
       <Text
         as="h1"
         text={numberInCard}
