@@ -30,7 +30,13 @@ export const BigCard = ({
       flexDirection="column"
       justifyContent="space-between"
     >
-      <Image src={sourceBannerImg} roundedTop={15} />
+      <Image
+        src={sourceBannerImg}
+        roundedTop={15}
+        width="15.625rem"
+        objectFit="cover"
+        height="9.5rem"
+      />
       <Box p="4">
         <Text
           text={titleCard}

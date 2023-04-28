@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { responsiveSwiperSettings } from "./responsiveSettings";
 
 export const Swiper = ({ children }) => {
   const getScreenSize = () => {
@@ -15,7 +16,7 @@ export const Swiper = ({ children }) => {
     <SwiperReact
       effect="coverflow"
       grabCursor
-      spaceBetween={getScreenSize() < 768 ? -40 : -1200}
+      breakpoints={responsiveSwiperSettings}
       slidesPerView="auto"
       coverflowEffect={{
         rotate: getScreenSize() < 768 ? 2 : 0,

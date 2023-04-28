@@ -28,7 +28,13 @@ export const NumberedCard = ({
         ml="-1.875rem"
         mb="-0.563rem"
       >
-        <Image src={sourceBannerImg} roundedTop={15} />
+        <Image
+          src={sourceBannerImg}
+          roundedTop={15}
+          width="10.75rem"
+          objectFit="cover"
+          height="8rem"
+        />
         <Box px="0.75rem" py="0.625rem">
           <Text text={titleCard} noOfLines={1} color="gray.100" />
         </Box>
