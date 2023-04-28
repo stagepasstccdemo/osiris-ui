@@ -29,6 +29,9 @@ export const Swiper = ({ children }) => {
         prevEl: ".swiper-button-prev",
       }}
       modules={[EffectCoverflow, Pagination, Navigation]}
+      style={{
+        zIndex: "auto",
+      }}
     >
       {children}
     </SwiperReact>
