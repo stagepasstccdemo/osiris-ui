@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/stagePass/osiris-ui/compare/v1.9.0...v1.9.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* broke responsive layout in some screen sizes ([cfab451](https://github.com/stagePass/osiris-ui/commit/cfab451e6e626b77f21beca0ea3a6d74fb87e975))
+
 # [1.9.0](https://github.com/stagePass/osiris-ui/compare/v1.8.0...v1.9.0) (2023-04-28)
 
 
