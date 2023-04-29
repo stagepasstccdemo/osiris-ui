@@ -1,12 +1,19 @@
 import { Button, Text, IconButton, Flex } from "@components/atoms";
 import { Divider } from "@components/molecules";
 import { BsChatLeft } from "react-icons/bs";
+import { FooterProps } from "./types";
 
-export const Footer = ({ iconButton }: any) => {
+export const Footer = ({
+  iconButton,
+  primaryText,
+  secondaryText,
+  optionalText,
+  buttonText,
+}: FooterProps) => {
   return (
     <footer>
       <Text
-        text="looks like you hit the end of the page"
+        text={primaryText}
         fontFamily="Raleway Dots"
         fontSize="3rem"
         maxWidth="80%"
@@ -21,7 +28,7 @@ export const Footer = ({ iconButton }: any) => {
             fontWeight="medium"
             gap="10px"
           >
-            <Text fontSize="3rem" text="go up" />
+            <Text fontSize="3rem" text={buttonText} />
             <IconButton variant="ghost" icon={iconButton} />
           </Flex>
         </Button>
@@ -34,16 +41,19 @@ export const Footer = ({ iconButton }: any) => {
         gap="5px"
         position="relative"
       >
-        <Text text="need help with anything ?" color="os-ternary.300" />
-        <Text text="Contact our chat support" color="os-secondary.100" />
+        <Text text={secondaryText} color="os-ternary.300" />
+        <Text text={optionalText} color="os-secondary.100" />
         <Divider borderColor="os-primary.100" />
-        <IconButton
-          icon={<BsChatLeft size={28} color="F59415" />}
-          position="absolute"
-          right="0"
-          top="1"
-        />
+        <IconButton icon={iconButton} position="absolute" right="0" top="1" />
       </Flex>
     </footer>
   );
+};
+
+Footer.defaultProps = {
+  iconButton: <BsChatLeft size={28} color="F59415" />,
+  primaryText: "looks like you hit the end of the page",
+  buttonText: "go up",
+  secondaryText: "need help with anything ?",
+  optionalText: "Contact our chat support",
 };
