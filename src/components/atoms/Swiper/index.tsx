@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { responsiveSwiperSettings } from "./responsiveSettings";
 
-export const Swiper = ({ children }) => {
+export const Swiper = ({ breakPoints, children }: any) => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export const Swiper = ({ children }) => {
     <SwiperReact
       effect="coverflow"
       grabCursor
-      breakpoints={responsiveSwiperSettings}
+      breakpoints={breakPoints || responsiveSwiperSettings}
       slidesPerView="auto"
       coverflowEffect={coverflowEffect}
       navigation={{

@@ -4,8 +4,12 @@ import { MultipleBadgesProps } from "./types";
 
 export const MultipleBadges = ({ badges, ...props }: MultipleBadgesProps) => {
   const renderBadges = () => {
-    return badges.map((badge) => <TextBadge key={badge.key} {...badge} />);
+    return badges.map((badge) => <TextBadge {...badge} />);
   };
 
-  return <Flex {...props}>{renderBadges()}</Flex>;
+  return (
+    <Flex wrap="wrap" {...props}>
+      {renderBadges()}
+    </Flex>
+  );
 };
