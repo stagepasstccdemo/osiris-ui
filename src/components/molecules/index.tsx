@@ -9,3 +9,4 @@ export * from "./Footer";
 export * from "./SearchInput";
 export * from "./Card";
 export * from "./Modal";
+export * from "./Accordion";

@@ -35,7 +35,7 @@ export const ModalHeader = ({
       <Text
         as="h1"
         fontSize="2rem"
-        color={bgDecoration ? "white" : "os-secondary.100"}
+        color={bgDecoration ? "white" : "os-primary.100"}
         text={mainText}
         mx="auto"
         {...textProps}
