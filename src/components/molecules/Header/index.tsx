@@ -1,16 +1,9 @@
-import {
-  Flex,
-  Image,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Flex, Image, useDisclosure } from "@chakra-ui/react";
 import { Button, IconButton, Text } from "@components/atoms";
+
+import { Modal } from "../Modal";
+import { ModalFooter } from "../Modal/ModalFooter";
+import { ModalHeader } from "../Modal/ModalHeader";
 import { HeaderProps } from "./types";
 
 export const Header = ({
@@ -25,31 +18,23 @@ export const Header = ({
 }: HeaderProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const renderModal = () => {
+  const renderModal = ({ children }) => {
     return (
-      <Modal isOpen={isOpen} onClose={onClose} size="full">
-        <ModalOverlay />
-        <ModalContent bgColor="white">
-          <ModalHeader>MODAL HEADER</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            delectus reprehenderit earum illo quibusdam incidunt reiciendis
-            maxime animi excepturi? Maxime pariatur recusandae tempora aperiam
-            obcaecati, nihil nesciunt perspiciatis sapiente reiciendis.
-          </ModalBody>
-          <ModalFooter>
-            <Button variant="ghost" mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </ModalFooter>
-        </ModalContent>
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        size="full"
+        bgColor="white"
+        headerModal={<ModalHeader handleCloseModal={onClose} />}
+        footerModal={<ModalFooter />}
+      >
+        {children}
       </Modal>
     );
   };
 
   return (
-    <header style={{ position: "static" }} id="header">
+    <header style={{ position: "static" }}>
       <Flex alignItems="center" justifyContent="space-between" {...flexProps}>
         <IconButton onClick={() => onOpen()} icon={leftIcon} {...iconProps} />
         <Image
@@ -71,7 +56,9 @@ export const Header = ({
             {userProfile}
           </Text>
         </Button>
-        {renderModal()}
+        {renderModal({
+          children: <Text>Modal Content</Text>,
+        })}
       </Flex>
     </header>
   );
