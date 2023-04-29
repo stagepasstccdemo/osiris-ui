@@ -5,5 +5,6 @@ export * from "./MultipleBadges";
 export * from "./InputWithLabel";
 export * from "./Divider";
 export * from "./Header";
+export * from "./Footer";
 export * from "./SearchInput";
 export * from "./Card";

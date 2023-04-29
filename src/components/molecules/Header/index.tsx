@@ -49,7 +49,7 @@ export const Header = ({
   };
 
   return (
-    <header style={{ position: "static" }}>
+    <header style={{ position: "static" }} id="header">
       <Flex alignItems="center" justifyContent="space-between" {...flexProps}>
         <IconButton onClick={() => onOpen()} icon={leftIcon} {...iconProps} />
         <Image
