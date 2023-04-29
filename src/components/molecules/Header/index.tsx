@@ -16,7 +16,10 @@ export const Header = ({
   buttonProps,
   textProps,
   leftIconModalContent,
+  leftModalTitle,
+  rightModalTitle,
   rightIconModalContent,
+  bgDecoration,
 }: HeaderProps) => {
   const {
     isOpen: isLeftIconModalOpen,
@@ -45,7 +48,12 @@ export const Header = ({
         onClose={onLeftIconModalClose}
         size="full"
         bgColor="white"
-        headerModal={<ModalHeader handleCloseModal={onLeftIconModalClose} />}
+        headerModal={
+          <ModalHeader
+            mainText={leftModalTitle}
+            handleCloseModal={onLeftIconModalClose}
+          />
+        }
         footerModal={<ModalFooter />}
       >
         {leftIconModalContent}
@@ -60,7 +68,13 @@ export const Header = ({
         onClose={onRightIconModalClose}
         size="full"
         bgColor="white"
-        headerModal={<ModalHeader handleCloseModal={onRightIconModalClose} />}
+        headerModal={
+          <ModalHeader
+            bgDecoration={bgDecoration}
+            mainText={rightModalTitle}
+            handleCloseModal={onRightIconModalClose}
+          />
+        }
         footerModal={<ModalFooter />}
       >
         {rightIconModalContent}

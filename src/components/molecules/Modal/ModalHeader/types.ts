@@ -12,4 +12,5 @@ export type ModalHeaderProps = ChakraUIModalHeaderProps & {
   flexProps?: FlexProps;
   boxProps?: BoxProps;
   textProps?: TextProps;
+  bgDecoration?: string;
 };

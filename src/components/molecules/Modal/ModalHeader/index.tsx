@@ -9,14 +9,19 @@ export const ModalHeader = ({
   flexProps,
   boxProps,
   textProps,
+  bgDecoration,
 }: ModalHeaderProps) => {
   return (
     <Flex
-      alignItems="center"
+      alignItems="flex-start"
       justifyContent="center"
       p="1rem"
       pt="2rem"
+      bgColor={bgDecoration && "os-primary.100"}
+      roundedBottom={bgDecoration && "2xl"}
+      height={bgDecoration && "10rem"}
       {...flexProps}
+      pr="4rem"
     >
       <Box {...boxProps}>
         <IconButton
@@ -30,7 +35,7 @@ export const ModalHeader = ({
       <Text
         as="h1"
         fontSize="2rem"
-        color="os-primary.100"
+        color={bgDecoration ? "white" : "os-secondary.100"}
         text={mainText}
         mx="auto"
         {...textProps}

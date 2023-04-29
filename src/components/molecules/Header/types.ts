@@ -12,4 +12,7 @@ export interface HeaderProps {
   textProps?: TextProps;
   leftIconModalContent: React.ReactNode;
   rightIconModalContent: React.ReactNode;
+  leftModalTitle?: string;
+  rightModalTitle?: string;
+  bgDecoration?: string;
 }
