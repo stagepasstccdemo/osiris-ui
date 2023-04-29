@@ -6,6 +6,7 @@ import {
   ModalHeader,
   ModalOverlay,
 } from "@chakra-ui/react";
+import { ModalProps } from "./types";
 
 export const Modal = ({
   children,
@@ -15,7 +16,7 @@ export const Modal = ({
   onClose,
   size,
   ...rest
-}: any) => {
+}: ModalProps) => {
   return (
     <ChakraUIModal isOpen={isOpen} onClose={onClose} size={size}>
       <ModalOverlay />
