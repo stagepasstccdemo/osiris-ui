@@ -4,6 +4,7 @@ import { Button, IconButton, Text } from "@components/atoms";
 import { Modal } from "../Modal";
 import { ModalFooter } from "../Modal/ModalFooter";
 import { ModalHeader } from "../Modal/ModalHeader";
+import { HeaderProps } from "./types";
 
 export const Header = ({
   leftIcon,
@@ -16,7 +17,7 @@ export const Header = ({
   textProps,
   leftIconModalContent,
   rightIconModalContent,
-}: any) => {
+}: HeaderProps) => {
   const {
     isOpen: isLeftIconModalOpen,
     onOpen: onLeftIconModalOpen,

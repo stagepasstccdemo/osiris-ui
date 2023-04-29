@@ -10,4 +10,6 @@ export interface HeaderProps {
   iconProps?: IconProps;
   buttonProps?: ButtonProps;
   textProps?: TextProps;
+  leftIconModalContent: React.ReactNode;
+  rightIconModalContent: React.ReactNode;
 }
