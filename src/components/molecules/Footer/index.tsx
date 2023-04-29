@@ -44,7 +44,12 @@ export const Footer = ({
         <Text text={secondaryText} color="os-ternary.300" />
         <Text text={optionalText} color="os-secondary.100" />
         <Divider borderColor="os-primary.100" />
-        <IconButton icon={iconButton} position="absolute" right="0" top="1" />
+        <IconButton
+          icon={<BsChatLeft size={28} color="F59415" /> || iconButton}
+          position="absolute"
+          right="0"
+          top="1"
+        />
       </Flex>
     </footer>
   );
