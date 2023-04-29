@@ -1,5 +1,6 @@
 import { Box, Flex, IconButton, Text } from "@components/atoms";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { ModalHeaderProps } from "./types";
 
 export const ModalHeader = ({
   handleCloseModal,
@@ -8,7 +9,7 @@ export const ModalHeader = ({
   flexProps,
   boxProps,
   textProps,
-}: any) => {
+}: ModalHeaderProps) => {
   return (
     <Flex
       alignItems="center"
