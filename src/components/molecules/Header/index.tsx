@@ -4,7 +4,6 @@ import { Button, IconButton, Text } from "@components/atoms";
 import { Modal } from "../Modal";
 import { ModalFooter } from "../Modal/ModalFooter";
 import { ModalHeader } from "../Modal/ModalHeader";
-import { HeaderProps } from "./types";
 
 export const Header = ({
   leftIcon,
@@ -15,20 +14,55 @@ export const Header = ({
   iconProps,
   buttonProps,
   textProps,
-}: HeaderProps) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  leftIconModalContent,
+  rightIconModalContent,
+}: any) => {
+  const {
+    isOpen: isLeftIconModalOpen,
+    onOpen: onLeftIconModalOpen,
+    onClose: onLeftIconModalClose,
+  } = useDisclosure();
 
-  const renderModal = ({ children }) => {
+  const {
+    isOpen: isRightIconModalOpen,
+    onOpen: onRightIconModalOpen,
+    onClose: onRightIconModalClose,
+  } = useDisclosure();
+
+  const renderLeftIconModalContent = () => {
+    onLeftIconModalOpen();
+  };
+
+  const renderRightIconModalContent = () => {
+    onRightIconModalOpen();
+  };
+
+  const renderLeftModal = () => {
     return (
       <Modal
-        isOpen={isOpen}
-        onClose={onClose}
+        isOpen={isLeftIconModalOpen}
+        onClose={onLeftIconModalClose}
         size="full"
         bgColor="white"
-        headerModal={<ModalHeader handleCloseModal={onClose} />}
+        headerModal={<ModalHeader handleCloseModal={onLeftIconModalClose} />}
         footerModal={<ModalFooter />}
       >
-        {children}
+        {leftIconModalContent}
+      </Modal>
+    );
+  };
+
+  const renderRightModal = () => {
+    return (
+      <Modal
+        isOpen={isRightIconModalOpen}
+        onClose={onRightIconModalClose}
+        size="full"
+        bgColor="white"
+        headerModal={<ModalHeader handleCloseModal={onRightIconModalClose} />}
+        footerModal={<ModalFooter />}
+      >
+        {rightIconModalContent}
       </Modal>
     );
   };
@@ -36,7 +70,11 @@ export const Header = ({
   return (
     <header style={{ position: "static" }}>
       <Flex alignItems="center" justifyContent="space-between" {...flexProps}>
-        <IconButton onClick={() => onOpen()} icon={leftIcon} {...iconProps} />
+        <IconButton
+          onClick={() => renderLeftIconModalContent()}
+          icon={leftIcon}
+          {...iconProps}
+        />
         <Image
           src={logoImg}
           alt="StagePass"
@@ -49,17 +87,17 @@ export const Header = ({
           width="3.125rem"
           height="3.125rem"
           rounded="15px"
-          onClick={() => onOpen()}
+          onClick={() => renderRightIconModalContent()}
           {...buttonProps}
         >
           <Text color="gray.100" {...textProps}>
             {userProfile}
           </Text>
         </Button>
-        {renderModal({
-          children: <Text>Modal Content</Text>,
-        })}
       </Flex>
+
+      {renderLeftModal()}
+      {renderRightModal()}
     </header>
   );
 };
