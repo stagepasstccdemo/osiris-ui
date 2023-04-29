@@ -29,7 +29,7 @@ export const Footer = ({
             gap="10px"
           >
             <Text fontSize="3rem" text={buttonText} />
-            <IconButton variant="ghost" icon={iconButton} />
+            {iconButton}
           </Flex>
         </Button>
       </Flex>
