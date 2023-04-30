@@ -4,4 +4,5 @@ export type FooterProps = {
   secondaryText?: string;
   optionalText?: string;
   buttonText?: string;
+  onlyChat?: boolean;
 };

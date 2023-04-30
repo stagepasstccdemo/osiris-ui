@@ -1,5 +1,6 @@
 import { Flex, Image, useDisclosure } from "@chakra-ui/react";
 import { Button, IconButton, Text } from "@components/atoms";
+import { navigateToUrl } from "single-spa";
 
 import { Modal } from "../Modal";
 import { ModalFooter } from "../Modal/ModalFooter";
@@ -102,7 +103,11 @@ export const Header = ({
           width="3.125rem"
           height="3.125rem"
           rounded="15px"
-          onClick={() => renderRightIconModalContent()}
+          onClick={() => {
+            return userProfile
+              ? renderRightIconModalContent()
+              : navigateToUrl("/authenticationMethod");
+          }}
           {...buttonProps}
         >
           <Text color={userProfile ? "white" : "os-primary.100"} {...textProps}>
