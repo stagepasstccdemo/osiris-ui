@@ -8,4 +8,6 @@ export interface BigCardProps {
   textButtonLabel: string;
   hasParentalHating?: boolean;
   parentalRating?: string;
+  handleCardClick?: (id: number) => void;
+  cardItemId?: number;
 }

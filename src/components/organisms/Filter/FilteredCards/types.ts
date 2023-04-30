@@ -11,4 +11,5 @@ export type FilteredCardsProps = {
   renderList?: BigCardProps[];
   hasSeeMoreOption?: boolean;
   cardType?: "big" | "numbered";
+  onSeeMoreClick?: (cardItemId: number) => void;
 };
