@@ -18,8 +18,8 @@ export const ModalHeader = ({
       p="1rem"
       pt="2rem"
       bgColor={bgDecoration && "os-primary.100"}
-      roundedBottom={bgDecoration && "2xl"}
-      height={bgDecoration && "10rem"}
+      roundedBottom={bgDecoration && "60px"}
+      height={bgDecoration && "15rem"}
       {...flexProps}
       pr="4rem"
     >

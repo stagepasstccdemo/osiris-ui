@@ -98,15 +98,15 @@ export const Header = ({
           {...imageProps}
         />
         <Button
-          bgColor="os-primary.100"
+          bgColor={userProfile ? "os-primary.100" : "transparent"}
           width="3.125rem"
           height="3.125rem"
           rounded="15px"
           onClick={() => renderRightIconModalContent()}
           {...buttonProps}
         >
-          <Text color="gray.100" {...textProps}>
-            {userProfile}
+          <Text color={userProfile ? "white" : "os-primary.100"} {...textProps}>
+            {userProfile || "Login"}
           </Text>
         </Button>
       </Flex>
