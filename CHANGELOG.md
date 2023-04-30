@@ -1,3 +1,25 @@
+# [1.10.0](https://github.com/stagePass/osiris-ui/compare/v1.9.1...v1.10.0) (2023-04-30)
+
+
+### Bug Fixes
+
+* wrong item rendered in contact info card ([f7931da](https://github.com/stagePass/osiris-ui/commit/f7931da28b54760ddfe3b5d138f7918428c38b59))
+
+
+### Features
+
+* create prop types for ModalHeader component ([4aa9034](https://github.com/stagePass/osiris-ui/commit/4aa9034a12f3c46fd460da2f02f1bbd9008260ea))
+* create prop types to Modal component ([115389a](https://github.com/stagePass/osiris-ui/commit/115389a5ba6cf926f7d2ce7b35f17a74ba75065d))
+* creates first version of accordion menu ([2873ece](https://github.com/stagePass/osiris-ui/commit/2873ece5f2b6656dd7acf0f7929f2446d897b318))
+* creates footer component ([c7f28e5](https://github.com/stagePass/osiris-ui/commit/c7f28e55bd22f1051738fe27c0ca04df0a7c5519))
+* creates menu card option component ([fe77e06](https://github.com/stagePass/osiris-ui/commit/fe77e0693b551fcea1630636d799799493fa6c34))
+* fix carrousel responsivness ([a9d96cc](https://github.com/stagePass/osiris-ui/commit/a9d96cc7eeb179adf4900713a635d122efce3ae3))
+* make modal works based on which icon on header is it calling ([0e6ef6d](https://github.com/stagePass/osiris-ui/commit/0e6ef6d3ebc2385d099bcb794766b562500d03d7))
+* makes modal component more reusable ([febe960](https://github.com/stagePass/osiris-ui/commit/febe9601cae354dbf2f6e05fb1a39a12359cc3a4))
+* separate the accordion parts into different reusable components ([cd7bdcf](https://github.com/stagePass/osiris-ui/commit/cd7bdcfc8ac01f07fc6b149216eae1674becacf8))
+* set new props on ModalHeader to allow bgColor if needed ([d30b4ec](https://github.com/stagePass/osiris-ui/commit/d30b4ecf2c649dfca5e9a18178dbd8d9126be2ea))
+* wrap pills when needed and also make it possible to override swiper breakpoints ([a807bbd](https://github.com/stagePass/osiris-ui/commit/a807bbd4c67ad7a2a603804a7cd39d857db5e0b0))
+
 ## [1.9.1](https://github.com/stagePass/osiris-ui/compare/v1.9.0...v1.9.1) (2023-04-28)
 
 
