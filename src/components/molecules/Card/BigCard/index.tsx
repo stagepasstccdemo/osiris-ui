@@ -18,7 +18,13 @@ export const BigCard = ({
   textButtonLabel,
   hasParentalHating = true,
   parentalRating = "+16",
+  handleCardClick,
+  cardItemId,
 }: BigCardProps) => {
+  const handleClickButton = () => {
+    handleCardClick(cardItemId);
+  };
+
   return (
     <Flex
       className="relative"
@@ -70,6 +76,7 @@ export const BigCard = ({
         roundedBottom="15px"
         px="3rem"
         py="1.75rem"
+        onClick={handleClickButton}
       >
         {textButtonLabel}
       </Button>

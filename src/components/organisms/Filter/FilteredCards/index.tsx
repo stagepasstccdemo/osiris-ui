@@ -16,6 +16,7 @@ export const FilteredCards = ({
   renderList,
   hasSeeMoreOption,
   cardType,
+  onSeeMoreClick,
 }: FilteredCardsProps) => {
   const renderListMap = () => {
     return (
@@ -42,6 +43,10 @@ export const FilteredCards = ({
                 textButtonLabel={textButtonLabel}
                 hasParentalHating={hasParentalHating}
                 parentalRating={parentalRating}
+                handleCardClick={(value) => {
+                  onSeeMoreClick(value);
+                }}
+                cardItemId={key}
               />
             </SwiperSlide>
           )

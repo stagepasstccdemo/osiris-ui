@@ -9,30 +9,35 @@ export const Footer = ({
   secondaryText,
   optionalText,
   buttonText,
+  onlyChat = false,
 }: FooterProps) => {
   return (
     <footer>
-      <Text
-        text={primaryText}
-        fontFamily="Raleway Dots"
-        fontSize="3rem"
-        maxWidth="80%"
-      />
+      {!onlyChat && (
+        <>
+          <Text
+            text={primaryText}
+            fontFamily="Raleway Dots"
+            fontSize="3rem"
+            maxWidth="80%"
+          />
 
-      <Flex justifyContent="flex-end" mt="2rem">
-        <Button variant="ghost" alignSelf="end">
-          <Flex
-            flexDirection="row"
-            alignItems="center"
-            justifyContent="space-between"
-            fontWeight="medium"
-            gap="10px"
-          >
-            <Text fontSize="3rem" text={buttonText} />
-            {iconButton}
+          <Flex justifyContent="flex-end" mt="2rem">
+            <Button variant="ghost" alignSelf="end">
+              <Flex
+                flexDirection="row"
+                alignItems="center"
+                justifyContent="space-between"
+                fontWeight="medium"
+                gap="10px"
+              >
+                <Text fontSize="3rem" text={buttonText} />
+                {iconButton}
+              </Flex>
+            </Button>
           </Flex>
-        </Button>
-      </Flex>
+        </>
+      )}
 
       <Flex
         mt="4rem"
@@ -61,4 +66,5 @@ Footer.defaultProps = {
   buttonText: "go up",
   secondaryText: "need help with anything ?",
   optionalText: "Contact our chat support",
+  onlyChat: false,
 };
