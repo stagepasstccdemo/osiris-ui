@@ -96,6 +96,7 @@ export const Header = ({
           alt="StagePass"
           objectFit="contain"
           width="180px"
+          onClick={() => navigateToUrl("/events")}
           {...imageProps}
         />
         <Button
