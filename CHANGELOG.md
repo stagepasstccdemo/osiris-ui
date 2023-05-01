@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/stagePass/osiris-ui/compare/v1.10.0...v1.11.0) (2023-05-01)
+
+
+### Features
+
+* go home when clicks on logo ([efc077e](https://github.com/stagePass/osiris-ui/commit/efc077e4df73210acfdb2f9466f45b347e9ba2c4))
+* setup high order functions callback to handle card click ([63c4c83](https://github.com/stagePass/osiris-ui/commit/63c4c83bcc809a408a97eb0678393e890c79f910))
+
 # [1.10.0](https://github.com/stagePass/osiris-ui/compare/v1.9.1...v1.10.0) (2023-04-30)
 
 
