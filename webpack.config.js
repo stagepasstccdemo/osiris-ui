@@ -2,7 +2,6 @@ const { mergeWithRules } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 
 module.exports = (webpackConfigEnv, argv) => {
-
   // This is the default config that single-spa recommends
   const defaultConfig = singleSpaDefaults({
     orgName: "stagepass",
@@ -19,8 +18,7 @@ module.exports = (webpackConfigEnv, argv) => {
       },
     },
   })(defaultConfig, {
-    
-    // Custom rules to webpack config in order to support tailwind postcss 
+    // Custom rules to webpack config in order to support tailwind postcss
     module: {
       rules: [
         {
