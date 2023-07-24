@@ -1,5 +1,6 @@
-import { Text as ChakraUiText } from "@chakra-ui/react";
 import ChakraWrapper from "@providers/ChakraWrapper";
+
+import { Text as ChakraUiText } from "@chakra-ui/react";
 
 export const Text = ({ ...props }) => {
   return (

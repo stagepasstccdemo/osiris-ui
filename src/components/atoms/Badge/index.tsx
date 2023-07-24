@@ -1,5 +1,6 @@
-import { Badge } from "@chakra-ui/react";
 import ChakraWrapper from "@providers/ChakraWrapper";
+
+import { Badge } from "@chakra-ui/react";
 import { styles } from "./styles";
 import { boxShadowMap, colorMap, TextBadgeProps } from "./types";
 

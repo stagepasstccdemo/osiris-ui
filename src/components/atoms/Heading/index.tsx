@@ -1,7 +1,8 @@
 import ChakraWrapper from "@providers/ChakraWrapper";
+
 import { Heading as ChakraHeading } from "@chakra-ui/react";
 
-const tailwind = require("../../../theme/typography");
+const tailwind = require("@theme/typography");
 
 export const Heading = ({ as, ...props }) => {
   const fontSize = as

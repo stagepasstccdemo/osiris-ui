@@ -1,5 +1,6 @@
-import { Flex as ChakraFlex } from "@chakra-ui/react";
 import ChakraWrapper from "@providers/ChakraWrapper";
+
+import { Flex as ChakraFlex } from "@chakra-ui/react";
 
 export const Flex = ({ ...props }) => {
   return (
