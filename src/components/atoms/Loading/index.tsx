@@ -1,4 +1,6 @@
-export const Loading = () => {
+import { LoadingProps } from "./types";
+
+export const Loading = ({ loadingMessage = "Loading..." }: LoadingProps) => {
   return (
     <div className="w-screen h-screen bg-os-secondary-100 flex justify-center items-center">
       <div
@@ -6,7 +8,7 @@ export const Loading = () => {
         role="status"
         aria-label="loading"
       >
-        <span className="sr-only">Loading...</span>
+        <span className="sr-only">{loadingMessage}</span>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import ChakraWrapper from "@providers/ChakraWrapper";
-import { Button as ChakraButton } from "@chakra-ui/react";
+import { Button as ChakraButton, ButtonProps } from "@chakra-ui/react";
 
-export const Button = ({ ...props }) => {
+export const Button = ({ ...props }: ButtonProps) => {
   return (
     <ChakraWrapper>
       <ChakraButton
