@@ -1,6 +1,6 @@
-import { Toaster as Toast, toast } from "react-hot-toast";
+import { Toaster as Toast, toast, ToasterProps } from "react-hot-toast";
 
-export const Toaster = ({ ...props }) => {
+export const Toaster = ({ ...props }: ToasterProps) => {
   return <Toast {...props} />;
 };
 

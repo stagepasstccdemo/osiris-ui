@@ -1,14 +1,15 @@
+import { useState } from "react";
+import { Text } from "@atoms/Text";
+
 import ChakraWrapper from "@providers/ChakraWrapper";
+
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+
 import {
   Input as ChakraInput,
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/react";
-
-import { useState } from "react";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-
-import { Text } from "@atoms/Text";
 
 export const Input = ({ type, ...props }) => {
   const { name, register, error } = props;

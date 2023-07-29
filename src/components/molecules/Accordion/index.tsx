@@ -1,17 +1,18 @@
 import { Accordion as ChakraUIAccordion, Stack } from "@chakra-ui/react";
 import ChakraWrapper from "@providers/ChakraWrapper";
 
-import { Divider } from "../Divider";
 import { AccordionItem } from "./AccordionItem";
+import { AccordionProps } from "./types";
 
-export const Accordion = () => {
+export const Accordion = ({ title, data }: AccordionProps) => {
   return (
     <ChakraWrapper>
       <ChakraUIAccordion allowMultiple allowToggle>
         <Stack spacing={4}>
-          <AccordionItem />
-          <Divider borderColor="os-ternary.300" />
-          <AccordionItem />
+          <AccordionItem>
+            <AccordionItem.Title title={title} />
+            <AccordionItem.Content data={data} />
+          </AccordionItem>
         </Stack>
       </ChakraUIAccordion>
     </ChakraWrapper>
