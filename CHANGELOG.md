@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/stagePass/osiris-ui/compare/v1.11.0...v1.12.0) (2023-07-29)
+
+
+### Features
+
+* create Accordion component ([9c54903](https://github.com/stagePass/osiris-ui/commit/9c54903184f8559c215657158dfe7f5137ec902a))
+
 # [1.11.0](https://github.com/stagePass/osiris-ui/compare/v1.10.0...v1.11.0) (2023-05-01)
 
 
