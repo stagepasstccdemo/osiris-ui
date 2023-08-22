@@ -96,6 +96,9 @@ export const Header = ({
           alt="StagePass"
           objectFit="contain"
           width="180px"
+          _hover={{
+            cursor: "pointer",
+          }}
           onClick={() => navigateToUrl("/events")}
           {...imageProps}
         />
