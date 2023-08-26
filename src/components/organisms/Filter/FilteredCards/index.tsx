@@ -64,6 +64,10 @@ export const FilteredCards = ({
               sourceBannerImg={item.sourceBannerImg}
               titleCard={item.titleCard}
               numberInCard={item.numberInCard}
+              handleCardClick={(value) => {
+                onSeeMoreClick(value);
+              }}
+              cardItemId={item.key}
             />
           </SwiperSlide>
         ))}
