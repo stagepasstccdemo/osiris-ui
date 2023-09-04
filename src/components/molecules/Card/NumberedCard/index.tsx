@@ -5,9 +5,21 @@ export const NumberedCard = ({
   sourceBannerImg,
   titleCard,
   numberInCard,
+  handleCardClick,
+  cardItemId,
 }: NumberedCardProps) => {
+  const handleClickButton = () => {
+    handleCardClick(cardItemId);
+  };
+
   return (
-    <Flex flexDirection="row" alignItems="flex-end" ml=".25rem" mb="2.5rem">
+    <Flex
+      flexDirection="row"
+      alignItems="flex-end"
+      ml=".25rem"
+      mb="2.5rem"
+      onClick={handleClickButton}
+    >
       <Text
         as="h1"
         text={numberInCard}

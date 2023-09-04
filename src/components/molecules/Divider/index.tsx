@@ -1,8 +1,18 @@
-import { Divider as ChakraDivider, Flex } from "@chakra-ui/react";
+import {
+  Divider as ChakraDivider,
+  Flex,
+  DividerProps as ChakraDividerProps,
+} from "@chakra-ui/react";
 import { Text } from "@components/atoms";
 import ChakraWrapper from "@providers/ChakraWrapper";
 
-export const Divider = ({ textInBetween = false, ...props }) => {
+interface DividerProps extends ChakraDividerProps {
+  textInBetween?: boolean;
+  distance?: string;
+  text?: string;
+}
+
+export const Divider = ({ textInBetween = false, ...props }: DividerProps) => {
   return (
     <ChakraWrapper>
       <Flex alignItems="center">
