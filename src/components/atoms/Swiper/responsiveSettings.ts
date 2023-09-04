@@ -32,4 +32,10 @@ export const responsiveSwiperSettings = {
   2880: {
     spaceBetween: -3150,
   },
+  3024: {
+    spaceBetween: -3400,
+  },
+  3440: {
+    spaceBetween: -3000,
+  },
 };
