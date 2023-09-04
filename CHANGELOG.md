@@ -1,3 +1,13 @@
+# [1.13.0](https://github.com/stagePass/osiris-ui/compare/v1.12.0...v1.13.0) (2023-09-04)
+
+
+### Features
+
+* adjust swiper responsivness settings ([22c51de](https://github.com/stagePass/osiris-ui/commit/22c51de244bbfda9dd87e0b76d0fd57a96403dc2))
+* enhance filteredcards components list ([fa477a3](https://github.com/stagePass/osiris-ui/commit/fa477a383c34b679500d8106149e8828451411a9))
+* make logo image hoverable ([b72cda8](https://github.com/stagePass/osiris-ui/commit/b72cda8f5e44ed14c1c2970cf7cdd07d2269366f))
+* make opacity decrease when hovering header title icon ([60bd6a0](https://github.com/stagePass/osiris-ui/commit/60bd6a09b6fc73a9811edc015d0f0004fad66b2b))
+
 # [1.12.0](https://github.com/stagePass/osiris-ui/compare/v1.11.0...v1.12.0) (2023-07-29)
 
 
