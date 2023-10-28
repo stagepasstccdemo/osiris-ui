@@ -17,7 +17,8 @@ NEW_URL=/config/mfe/osiris-ui/$VERSION/stagepass-osiris-ui.js
 test -s ./import-map.json && cat ./import-map.json | ./jq --arg NEW_URL "$NEW_URL" '.imports["@stagepass/osiris-ui"] = $NEW_URL' > new.importmap.json || echo '{"imports": {"@stagepass/osiris-ui": "'"$NEW_URL"'"}}' > new.importmap.json
 
 # Upload the new import-map.json
+# INSERT_CORRECT_DISTRIBUTION_ID
 aws s3 ls s3://mfe-stage-pass/config/mfe/osiris-ui/ | awk '{print $2}' | sort -r | sed -n '3,$p' | xargs -I {} aws s3 rm s3://mfe-stage-pass/config/mfe/osiris-ui/{}/ --recursive
 aws s3 cp dist s3://mfe-stage-pass/config/mfe/osiris-ui/$VERSION --recursive
 aws s3 cp new.importmap.json s3://mfe-stage-pass/config/import-map.json
-aws cloudfront create-invalidation --distribution-id E3AG25M6KMU46Y --paths '/config/import-map.json'
+aws cloudfront create-invalidation --distribution-id INSERT_CORRECT_DISTRIBUTION_ID --paths '/config/import-map.json'
